@@ -21857,7 +21857,7 @@
 					'div',
 					null,
 					_react2.default.createElement('input', {
-						placeholder: '\u8BF7\u8F93\u5165\u53C2\u4E0E\u4EBA\u6570',
+						placeholder: '\u8BF7\u8F93\u5165\u53C2\u4E0E\u4EBA\u6570(6-8)',
 						className: 'form-control',
 						value: this.state.term,
 						onChange: this.onInputChange }),
