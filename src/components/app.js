@@ -97,7 +97,7 @@ export default class App extends Component {
 	return (
 		<div>
 	        <input
-	          placeholder="请输入参与人数"
+	          placeholder="请输入参与人数(6-8)"
 	          className="form-control"
 	          value={this.state.term}
 	          onChange={this.onInputChange} />
