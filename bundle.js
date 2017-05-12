@@ -21751,7 +21751,7 @@
 
 			_this.dict = {
 				6: ['预言家', '女巫', '猎人', '白痴', '狼人', '狼人', '平民', '平民', '平民', '平民', '平民', '平民'],
-				7: ['预言家', '女巫', '猎人', '白痴', '狼人', '狼人', '平民', '平民', '平民', '平民', '平民', '平民', '平民', '平民'],
+				7: ['预言家', '花蝴蝶', '猎人', '白痴', '狼人', '狼人', '守卫', '平民', '平民', '平民', '平民', '平民', '平民', '平民'],
 				8: ['预言家', '女巫', '猎人', '白痴', '狼人', '狼人', '平民', '平民', '平民', '平民', '平民', '平民', '平民', '平民', '狼人', '守卫']
 			};
 
@@ -21838,8 +21838,14 @@
 						shuffleRoles2 = shuffleRoles.slice(count);
 						var i = void 0;
 						for (i = 0; i < count; i++) {
-							if (shuffleRoles1[i] === '狼人' && shuffleRoles2[i] === '狼人') flag = true;
-							if (shuffleRoles1[i] === '狼人' && shuffleRoles2[i] === '预言家' || shuffleRoles2[i] === '狼人' && shuffleRoles1[i] === '预言家') flag = true;
+							if (shuffleRoles1[i] === '狼人' && shuffleRoles2[i] === '狼人') {
+								flag = true;
+								break;
+							}
+							if (shuffleRoles1[i] === '狼人' && shuffleRoles2[i] === '预言家' || shuffleRoles2[i] === '狼人' && shuffleRoles1[i] === '预言家') {
+								flag = true;
+								break;
+							}
 						}
 						if (i === count) {
 							flag = false;

@@ -79,8 +79,14 @@ export default class App extends Component {
 				shuffleRoles2 = shuffleRoles.slice(count);
 				let i;
 				for (i=0;i<count;i++) {
-					if(shuffleRoles1[i] === '狼人' && shuffleRoles2[i] === '狼人') flag = true;
-					if((shuffleRoles1[i] === '狼人' && shuffleRoles2[i] === '预言家') || (shuffleRoles2[i] === '狼人' && shuffleRoles1[i] === '预言家')) flag = true;
+					if(shuffleRoles1[i] === '狼人' && shuffleRoles2[i] === '狼人') {
+						flag = true;
+						break;
+					}
+					if((shuffleRoles1[i] === '狼人' && shuffleRoles2[i] === '预言家') || (shuffleRoles2[i] === '狼人' && shuffleRoles1[i] === '预言家')) {
+						flag = true;
+						break;
+					}
 				}
 				if ( i===count) {
 					flag = false;
